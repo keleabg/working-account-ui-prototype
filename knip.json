@@ -1,0 +1,39 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+
+  "entry": [
+    "app/**/{layout,page,template,default,not-found,error,route}.{ts,tsx}",
+    "next.config.{js,mjs,ts}"
+  ],
+  "project": [
+    "./**/*.{ts,tsx}"
+  ],
+
+  "ignore": [
+    ".next/**",
+    "dist/**",
+    "out/**",
+    "coverage/**",
+    "**/*.d.ts",
+    "**/__generated__/**"
+  ],
+
+  "rules": {
+  
+    "files": "off",
+    "exports": "off",
+    "types": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "duplicates": "off",
+    "enumMembers": "off",
+    "classMembers": "off",
+    
+    "unlisted": "error",   
+    "unresolved": "error",  
+    "binaries": "error",      
+    "dependencies": "off",  
+    "devDependencies": "off",
+    "optionalPeerDependencies": "off"
+  }
+}
